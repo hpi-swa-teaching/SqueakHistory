@@ -1,10 +1,10 @@
 SmalltalkCISpec {
   #loading : [
     SCIMetacelloLoadSpec {
-      #baseline : 'SqueakHistory',
-      #directory : 'packages',
-      #load : 'Tests',
-      #platforms : [ #squeak ]
+      #baseline : 'SqueakHistory',	//Define MC Baseline
+      #directory : 'packages',		//Path to packages if FileTree is used
+      #load : 'Tests',				//Define MC load attributes
+      #platforms : [ #squeak ]		//Define compativle platforms
     }
   ]
 }
