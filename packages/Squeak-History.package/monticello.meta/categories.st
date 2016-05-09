@@ -1,1 +1,2 @@
-SystemOrganization addCategory: #'Squeak-History'!
+SystemOrganization addCategory: #'SqueakHistory-Tests'!
+SystemOrganization addCategory: #SqueakHistory!
