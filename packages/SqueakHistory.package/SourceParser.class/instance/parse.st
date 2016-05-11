@@ -1,3 +1,5 @@
 as yet unclassified
 parse
-^ (FileStream readOnlyFileNamed: 'bla.txt') contentsOfEntireFile.
+|s|
+s := (FileStream readOnlyFileNamed: file) contentsOfEntireFile.
+^s

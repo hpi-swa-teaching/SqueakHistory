@@ -2,5 +2,6 @@
 	"class" : {
 		 },
 	"instance" : {
-		"setUp" : "jk 5/9/2016 10:18",
-		"testParser" : "jk 5/9/2016 11:06" } }
+		"setUp" : "jk 5/9/2016 11:55",
+		"testParser" : "jk 5/11/2016 09:23",
+		"testParser2" : "jk 5/11/2016 09:28" } }

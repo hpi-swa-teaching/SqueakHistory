@@ -1,4 +1,5 @@
 as yet unclassified
 testParser
-	"self assert: 'Üäääh?' equals: parser parse."
-	self assert: true.
+|p|
+p:=SourceParser newFromFile: 'history\bla.txt'.
+	self assert: 'Üäääh?\\Ö' withCRs equals: p parse.
