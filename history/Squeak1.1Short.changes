@@ -1,0 +1,90 @@
+'From Squeak 1.1 of September 21, 1996 on 23 September 1996 at 8:34:59 pm'!
+
+
+!AbstractSound methodsFor: 'playing'!
+playSampleCount: n into: aSoundBuffer startingAt: startIndex stereo: stereoFlag
+	"Mixes the next count samples of this sound into the given buffer starting at the given index, updating the receiver's control parameters at periodic intervals."
+
+	| leftRightPan samplesBetweenControlUpdates pastEnd i remainingSamples count |
+	stereoFlag ifTrue: [leftRightPan _ 500] ifFalse: [leftRightPan _ 1000].
+	samplesBetweenControlUpdates _ self samplingRate // self controlRate.
+	pastEnd _ startIndex + n.  "index just index of after last sample"
+	i _ startIndex.
+	[i < pastEnd] whileTrue: [
+		remainingSamples _ self samplesRemaining.
+		remainingSamples <= 0 ifTrue: [ ^ self ].
+		count _ pastEnd - i.
+		samplesUntilNextControl < count ifTrue: [ count _ samplesUntilNextControl ].
+		remainingSamples < count		ifTrue: [ count _ remainingSamples ].
+		self mixSampleCount: count into: aSoundBuffer startingAt: i pan: leftRightPan.
+		samplesUntilNextControl _ samplesUntilNextControl - count.
+		samplesUntilNextControl <= 0 ifTrue: [
+			self doControl.
+			samplesUntilNextControl _ samplesBetweenControlUpdates.
+		].
+		i _ i + count.
+	].
+! !
+!AbstractSound class methodsFor: 'primitive generation'!
+cCodeForSoundPrimitives
+	"Return a string containing the C code for the sound primitives. This string is pasted into a file, compiled, and linked into the virtual machine. Note that the virtual machine's primitive table must also be edited to make new primitives available."
+
+	^ CCodeGenerator new codeStringForPrimitives: #(
+		(WaveTableSound mixSampleCount:into:startingAt:pan:)
+		(FMSound mixSampleCount:into:startingAt:pan:)
+		(PluckedSound mixSampleCount:into:startingAt:pan:)
+	).
+! !
+
+Alias comment:
+'An objects whose contents consist of a reference to another object.  6/8/96 sw'!
+!Alias methodsFor: 'everything'!
+comeFullyUpOnReload
+	"recompute my referent object (contants) from the path I have saved.  Upon coming in from the disk.  8/8/96 tk" 
+
+	| pp |
+	super comeFullyUpOnReload.
+	contents class == PathFromHome ifTrue:
+		["I refer to an object outside the hierarchy in this file.  
+			Hopefully it is here and found by the same path as before."
+		(pp _ contents copy) removeFirst.	" 'Home' "
+		contents _ Home resolvePath: pp].
+	^ self!
+contents: anObject
+	"Smash anObject into the receiver's contents.  For aliases, we pass the contents-setting message on to the referent.  7/13/96 sw"
+
+	contents isExtant ifTrue:
+		[contents contents: anObject]!
+contentsString
+	^ contents isExtant
+		ifTrue:
+			[contents contentsString]
+		ifFalse:
+			['<gone>']!
+currentNumericValue
+	^ self contents currentNumericValue!
+displayContentsOnCanvas: aCanvas
+	contents isExtant
+		ifTrue:
+			[contents displayContentsOnCanvas: aCanvas]!
+editTextIn: aView
+	"Fire up a text editor in my layoutRectangle of aView, to operate on the text of my referent.  Derived from Dan's work for TextObjs.  8/10/96 sw"
+
+	| newView screenRect textToEdit |
+	textToEdit _ contents contents.
+	screenRect _ (layoutRectangle insetBy: 2@2)
+				translateBy: aView insetDisplayBox topLeft.
+	newView _ DisplayTextView new model: textToEdit.
+	newView window: (0@0 extent: screenRect extent) viewport: screenRect.
+	textToEdit wrappingBox: screenRect clippingBox: screenRect.
+	textToEdit display.
+	newView controller changeParagraph: textToEdit.
+	newView controller startUp.
+	self invalidateCanvas.
+	contents invalidateCanvas!
+emphasisForName
+	"Italics for Alias.   6/8/96 sw"
+
+	^ 3!
+maximumValue
+	^ self contents maximumValue!
