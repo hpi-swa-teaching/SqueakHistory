@@ -2,7 +2,8 @@ language: smalltalk
 sudo: false
 
 before_script:
-  - ln -s $SMALLTALK_CI_GIT/history -t .
+  - pwd
+#  - ln -s $SMALLTALK_CI_GIT/history -t .
   - ls -ltrA
 
 # Select operating system(s)
