@@ -3,7 +3,7 @@ sudo: false
 
 before_script:
   - pwd
-  - ln -s ./history -t $SMALLTALK_CI_BUILD/
+#  - ln -s ./history -t $SMALLTALK_CI_BUILD/
   - ls -ltrA
 
 after_script:
