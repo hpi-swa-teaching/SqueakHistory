@@ -3,9 +3,12 @@ sudo: false
 
 before_script:
   - pwd
-#  - ln -s $SMALLTALK_CI_GIT/history -t .
+  - ln -s ./history -t $SMALLTALK_CI_BUILD/
   - ls -ltrA
 
+after_script:
+  - pwd
+  - ls -ltrA
 # Select operating system(s)
 os:
   - linux
