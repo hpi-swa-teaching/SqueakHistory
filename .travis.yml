@@ -1,16 +1,5 @@
 language: smalltalk
 sudo: false
-
-before_script:
-  - pwd
-#  - ln -s ./history -t $SMALLTALK_CI_BUILD/
-#  - ls /home/travis/smalltalkCI-master/_builds/ -ltrA
-
-after_script:
-  - pwd
-  - ls -ltrA
-  - ls /home/travis/smalltalkCI-master/_builds/ -ltrA
-  - ls /home/travis/smalltalkCI-master/_builds/history -ltrA  
   
 # Select operating system(s)
 os:
