@@ -4,11 +4,13 @@ sudo: false
 before_script:
   - pwd
 #  - ln -s ./history -t $SMALLTALK_CI_BUILD/
-  - ls -ltrA
+  - ls /home/travis/build/HPI-SWA-Teaching/SWT16-Project-01 -ltrA
 
 after_script:
   - pwd
   - ls -ltrA
+  - ls /home/travis/build/HPI-SWA-Teaching/SWT16-Project-01 -ltrA  
+  
 # Select operating system(s)
 os:
   - linux
