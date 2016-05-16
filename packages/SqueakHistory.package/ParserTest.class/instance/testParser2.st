@@ -1,7 +1,8 @@
 as yet unclassified
 testParser2
-|p s lines|
-p:=SourceParser newFromFile: 'history', FileDirectory slash, 'Squeak1.1.changes'.
+|p s lines filepath|
+filepath := 'git_cache', FileDirectory slash, 'history', FileDirectory slash, 'Squeak1.1.changes'.
+p:=SourceParser newFromFile: filepath.
 s:=p parse.
 lines := s findTokens: Character cr.
 
