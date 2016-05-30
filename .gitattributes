@@ -1,0 +1,5 @@
+text=auto
+*.changes text eol=cr
+*.cs text eol=cr
+*.st text eol=cr
+*.sources text eol=cr
