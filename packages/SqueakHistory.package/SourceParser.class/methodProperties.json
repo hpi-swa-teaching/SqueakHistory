@@ -1,6 +1,8 @@
 {
 	"class" : {
-		"newFromFile:" : "jk 5/9/2016 11:50" },
+		"newFromFile:" : "jk 5/9/2016 11:50",
+		"parseChangeListFrom:" : "jk 5/30/2016 11:57",
+		"showChangeList:" : "jk 5/30/2016 11:58" },
 	"instance" : {
 		"countCodeChunks" : "jj 5/16/2016 22:58",
 		"file" : "jk 5/9/2016 12:09",

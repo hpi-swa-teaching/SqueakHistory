@@ -1,9 +1,8 @@
 as yet unclassified
-testChangeList
-	| changeList changesFile file stream |
-	file := 'git_cache' , FileDirectory slash , 'history' , FileDirectory slash , 'Squeak1.1.changes'.
-	stream := FileStream readOnlyFileNamed: file.
+parseChangeListFrom: file 
 	"inspired by ChangeLIst browseRecent: charCount on: origChangesFile"
+	| stream changesFile changeList |
+	stream := FileStream readOnlyFileNamed: file.
 	changesFile := stream readOnlyCopy.
 	changesFile setConverterForCode.
 	changeList := Cursor read
@@ -12,3 +11,4 @@ testChangeList
 						from: 0
 						to: changesFile size].
 	changesFile close.
+	^changeList

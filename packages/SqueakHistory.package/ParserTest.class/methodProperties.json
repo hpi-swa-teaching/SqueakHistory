@@ -3,9 +3,12 @@
 		 },
 	"instance" : {
 		"setUp" : "jj 5/16/2016 23:02",
-		"testChangeList" : "jk 5/30/2016 10:22",
+		"testParseChanges" : "jk 5/30/2016 11:56",
+		"testParseCs" : "jk 5/30/2016 11:55",
+		"testParseSources" : "jk 5/30/2016 12:10",
+		"testParseSt" : "jk 5/30/2016 12:11",
 		"testParser" : "jj 5/16/2016 23:03",
 		"testParser2" : "jj 5/16/2016 23:03",
-		"testParserCountChunks1" : "jj 5/16/2016 23:02",
-		"testParserCountChunks2" : "jj 5/16/2016 23:01",
-		"testParserCountChunks3" : "jj 5/16/2016 23:01" } }
+		"testParserCountChunks1" : "jk 5/30/2016 12:12",
+		"testParserCountChunks2" : "jk 5/30/2016 12:12",
+		"testParserCountChunks3" : "jk 5/30/2016 12:12" } }

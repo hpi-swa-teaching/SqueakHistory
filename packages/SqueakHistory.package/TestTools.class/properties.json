@@ -1,0 +1,14 @@
+{
+	"category" : "SqueakHistory-Tests",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		 ],
+	"name" : "TestTools",
+	"pools" : [
+		 ],
+	"super" : "Object",
+	"type" : "normal" }
