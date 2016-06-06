@@ -1,0 +1,3 @@
+[submodule "SqueakHistoryArchive"]
+	path = SqueakHistoryArchive
+	url = https://github.com/iLoach/SqueakHistoryArchive.git
