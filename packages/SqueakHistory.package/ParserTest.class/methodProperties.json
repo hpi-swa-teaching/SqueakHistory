@@ -3,8 +3,8 @@
 		 },
 	"instance" : {
 		"setUp" : "jj 5/16/2016 23:02",
-		"test" : "jk 6/1/2016 09:48",
-		"testParseChanges" : "jk 6/6/2016 09:50",
+		"test" : "jk 6/6/2016 10:35",
+		"testParseChanges" : "jk 6/6/2016 12:07",
 		"testParseCs" : "jk 5/30/2016 11:55",
 		"testParseSources" : "jk 5/30/2016 12:10",
 		"testParseSt" : "jk 6/1/2016 10:23",
