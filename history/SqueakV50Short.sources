@@ -68,6 +68,8 @@ initialize
 ""
 	self extent: 1 @ 1! !
 
+"-- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- "!
+
 BorderedSubpaneDividerMorph class
 	instanceVariableNames: ''!
 
