@@ -4,7 +4,9 @@
 	"instance" : {
 		"setUp" : "jj 5/16/2016 23:02",
 		"test" : "jk 6/6/2016 10:35",
-		"testGetSubDirs" : "rb 6/8/2016 08:49",
+		"testGetSubDirs" : "jk 6/13/2016 10:10",
+		"testHistoryVersion" : "jk 6/13/2016 10:55",
+		"testHistoryVersionFromDirectory" : "jk 6/13/2016 11:20",
 		"testParseChanges" : "jk 6/6/2016 12:07",
 		"testParseCs" : "jk 5/30/2016 11:55",
 		"testParseSources" : "jk 5/30/2016 12:10",

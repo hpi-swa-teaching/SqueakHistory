@@ -1,0 +1,15 @@
+{
+	"category" : "SqueakHistory",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"changeLists",
+		"version" ],
+	"name" : "HistoryVersion",
+	"pools" : [
+		 ],
+	"super" : "Object",
+	"type" : "normal" }
