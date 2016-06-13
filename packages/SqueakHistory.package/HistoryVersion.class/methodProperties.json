@@ -1,9 +1,9 @@
 {
 	"class" : {
-		"newFromDirectory:" : "jk 6/13/2016 11:19",
-		"newFromVersion:changeLists:" : "jk 6/13/2016 10:25" },
+		"newFromDirectory:" : "jk 6/13/2016 12:08",
+		"newFromName:changesByName:" : "jk 6/13/2016 12:05" },
 	"instance" : {
-		"changeLists" : "jk 6/13/2016 10:14",
-		"changeLists:" : "jk 6/13/2016 10:14",
-		"version" : "jk 6/13/2016 10:22",
-		"version:" : "jk 6/13/2016 10:22" } }
+		"changesByName" : "jk 6/13/2016 11:29",
+		"changesByName:" : "jk 6/13/2016 11:29",
+		"name" : "jk 6/13/2016 12:01",
+		"name:" : "jk 6/13/2016 12:01" } }

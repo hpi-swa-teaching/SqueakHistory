@@ -1,8 +1,9 @@
 as yet unclassified
 newFromDirectory: directory
-|dir changeLists fileNames|
+|dir fileNames changesByName |
+changesByName := Dictionary new.
 dir := (FileDirectory default) on: directory.
 fileNames :=dir fileNames.
-changeLists :=  fileNames collect: [:file | SourceParser parseChangeListFrom: (dir fullPathFor: file)].
+fileNames do: [:file |	changesByName at: file put: (SourceParser parseChangeListFrom: (dir fullPathFor: file))].
 
-^ self newFromVersion: (dir pathParts last) changeLists: changeLists.
+^ self newFromName: (dir pathParts last) changesByName: changesByName.
