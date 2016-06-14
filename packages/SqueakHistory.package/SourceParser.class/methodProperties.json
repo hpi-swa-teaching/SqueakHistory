@@ -1,13 +1,13 @@
 {
 	"class" : {
 		"newFromFile:" : "jk 5/9/2016 11:50",
-		"parseChangeListFrom:" : "jk 5/30/2016 11:57",
-		"showChangeList:" : "jk 5/30/2016 11:58" },
+		"parseChangeListFrom:" : "jj 6/14/2016 22:45",
+		"showChangeList:" : "jj 6/14/2016 23:20" },
 	"instance" : {
 		"countCodeChunks" : "jj 5/16/2016 22:58",
 		"dataLocation" : "rb 6/8/2016 08:39",
 		"dataLocation:" : "rb 6/8/2016 08:39",
 		"file" : "jk 5/9/2016 12:09",
 		"file:" : "jk 5/9/2016 12:09",
-		"getSubDirs" : "rb 6/8/2016 08:45",
+		"getSubDirs" : "jj 6/14/2016 22:04",
 		"parse" : "jj 5/16/2016 21:40" } }

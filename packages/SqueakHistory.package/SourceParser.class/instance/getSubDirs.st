@@ -1,5 +1,5 @@
 as yet unclassified
 getSubDirs
-|dir|
-dir := (FileDirectory default) on: dataLocation.
-^ dir directoryNames.
+	| dir |
+	dir := (FileDirectory default) on: dataLocation.
+	^ dir directoryNames.

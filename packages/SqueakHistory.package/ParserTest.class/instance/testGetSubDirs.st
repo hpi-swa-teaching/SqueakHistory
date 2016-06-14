@@ -1,6 +1,6 @@
 as yet unclassified
 testGetSubDirs
-	|parser subDirs|
+	| parser subDirs |
 	parser := SourceParser new.
 	parser dataLocation: 'git_cache', FileDirectory slash, 'history', FileDirectory slash, '1.23'.
 	subDirs := parser getSubDirs.

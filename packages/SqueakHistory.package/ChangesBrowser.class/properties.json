@@ -1,13 +1,14 @@
 {
 	"category" : "SqueakHistory",
 	"classinstvars" : [
-		"instance" ],
+		 ],
 	"classvars" : [
 		 ],
 	"commentStamp" : "",
 	"instvars" : [
-		"versionsByName" ],
-	"name" : "History",
+		"file",
+		"dataLocation" ],
+	"name" : "ChangesBrowser",
 	"pools" : [
 		 ],
 	"super" : "Object",

@@ -1,7 +1,10 @@
 {
 	"class" : {
-		"newFromDirectory:" : "jk 6/13/2016 12:17",
-		"newFromVersionsByName:" : "jk 6/13/2016 11:59" },
+		"instance" : "jj 6/14/2016 22:24",
+		"instance:" : "jj 6/14/2016 22:23",
+		"newFromArchive:" : "jj 6/14/2016 23:41",
+		"newFromDirectory:" : "jj 6/14/2016 22:44",
+		"newFromVersionsByName:" : "jj 6/14/2016 22:44" },
 	"instance" : {
 		"versionsByName" : "jk 6/13/2016 11:58",
 		"versionsByName:" : "jk 6/13/2016 11:58" } }

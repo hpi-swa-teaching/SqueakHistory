@@ -1,5 +1,5 @@
 as yet unclassified
-parseChangeListFrom: file 
+parseChangeListFrom: file
 	"inspired by ChangeLIst browseRecent: charCount on: origChangesFile"
 	| stream changesFile changeList |
 	stream := FileStream readOnlyFileNamed: file.

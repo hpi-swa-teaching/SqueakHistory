@@ -1,6 +1,6 @@
 as yet unclassified
 showChangeList: changeList
-ChangeList
+	^ ChangeList
 		open: changeList
 		name: 'Recent changes'
 		multiSelect: true

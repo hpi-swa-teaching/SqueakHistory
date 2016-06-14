@@ -1,14 +1,14 @@
 {
-	"category" : "SqueakHistory",
+	"category" : "SqueakHistory-Tests",
 	"classinstvars" : [
-		"instance" ],
+		 ],
 	"classvars" : [
 		 ],
 	"commentStamp" : "",
 	"instvars" : [
-		"versionsByName" ],
-	"name" : "History",
+		 ],
+	"name" : "ChangesBrowserTest",
 	"pools" : [
 		 ],
-	"super" : "Object",
+	"super" : "TestCase",
 	"type" : "normal" }
