@@ -1,12 +1,6 @@
 as yet unclassified
 newFromDirectory: directory 
-	| versionsByName dir directoryNames |
-	versionsByName := Dictionary new.
+	| versionsByName dir |
 	dir := FileDirectory default on: directory.
-	directoryNames := dir directoryNames.
-	directoryNames
-		do: [:each | versionsByName
-				at: each
-				put: (HistoryVersion
-						newFromDirectory: (dir fullPathFor: each))].
+	versionsByName := Dictionary newFrom: (dir directoryNames collect: [:file | file -> (HistoryVersion newFromDirectory: (dir fullPathFor: file))])..
 	^ self newFromVersionsByName: versionsByName
