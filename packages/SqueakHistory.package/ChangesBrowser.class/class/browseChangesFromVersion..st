@@ -6,4 +6,4 @@ browseChangesFromVersion: versionNumber
 	[historyVersion := (history versionsByName at: versionNumber)]
 		ifError: [^ self error: 'This version is not loaded.'].
 	historyVersion changesByName  do: [ :changeList |
-		^ SourceParser showChangeList: changeList ] 
+		SourceParser showChangeList: changeList ] 
