@@ -6,8 +6,8 @@
 		 ],
 	"commentStamp" : "",
 	"instvars" : [
-		"versionGroupsByName" ],
-	"name" : "History",
+		"versionsByName" ],
+	"name" : "HistoryVersionGroup",
 	"pools" : [
 		 ],
 	"super" : "Object",
