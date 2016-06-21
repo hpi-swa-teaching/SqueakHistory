@@ -6,5 +6,4 @@ testHistoryVersion
 	self assert: '1.23' equals: version name.
 	self assert: 1 equals: version changesByName size.
 	self assert: #doIt equals: ((version changesByName at: 'Squeak1.23.changes') changeList first type).
-	SourceParser showChangeList: changeList.
-	self halt
+	SourceParser showChangeList: changeList
