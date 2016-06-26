@@ -1,0 +1,25 @@
+as yet unclassified
+testGetInitialsFromStamp
+	"test for the initial extraction"
+
+	| stamp initials |
+	stamp := '6/9/97 11:46 tk'.
+	initials := HistoryCounter getInitialsFromStamp: stamp.
+	self assert: 'tk' equals: initials.
+	
+	stamp := '6/9/97 tk 11:46'.
+	initials := HistoryCounter getInitialsFromStamp: stamp.
+	self assert: 'tk' equals: initials.
+	
+	stamp := 'tk 6/9/97 11:46'.
+	initials := HistoryCounter getInitialsFromStamp: stamp.
+	self assert: 'tk' equals: initials.
+	
+	stamp := 'Lorem Ipsum'.
+	initials := HistoryCounter getInitialsFromStamp: stamp.
+	self assert: 'Lorem' equals: initials.
+
+stamp := '6/13/97 09:14 '.
+	initials := HistoryCounter getInitialsFromStamp: stamp.
+	self assert: '' equals: initials.
+	

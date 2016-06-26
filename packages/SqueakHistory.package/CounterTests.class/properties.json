@@ -1,0 +1,14 @@
+{
+	"category" : "SqueakHistory-Tests",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		 ],
+	"name" : "CounterTests",
+	"pools" : [
+		 ],
+	"super" : "TestCase",
+	"type" : "normal" }
