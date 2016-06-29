@@ -6,4 +6,7 @@ testChangesForClassForMethod
 	self assert: 1 equals: changes size.
 	self assert: #method equals: changes first type.
 	self assert: 'AbstractSound' equals: changes first methodClass name asString.
-	self assert: 'setPitch:dur:loudness:' equals: changes first methodSelector
+	self assert: 'setPitch:dur:loudness:' equals: changes first methodSelector.
+	
+	SourceParser showChanges: changes.
+	SourceParser showChangesWithDefaultFormatting: changes
