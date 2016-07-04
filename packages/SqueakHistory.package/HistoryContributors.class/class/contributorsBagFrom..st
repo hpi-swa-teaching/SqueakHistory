@@ -1,3 +1,3 @@
 as yet unclassified
-countContributorsFrom: changes
+contributorsBagFrom: changes
 	^ changes collect: [:changeRecord | self getNameFromStamp: changeRecord stamp] asBag

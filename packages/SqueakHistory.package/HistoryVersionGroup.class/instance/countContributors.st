@@ -1,5 +1,5 @@
 as yet unclassified
 countContributors 
-	^ HistoryContributors countContributorsFrom: (self versionsByName
+	^ HistoryContributors contributorsBagFrom: (self versionsByName
 				gather: [:historyVersion | historyVersion changesByName
 						gather: [:changes | changes]])
