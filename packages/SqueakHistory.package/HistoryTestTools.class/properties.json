@@ -1,15 +1,13 @@
 {
-	"category" : "SqueakHistory",
+	"category" : "SqueakHistory-Tests",
 	"classinstvars" : [
-		"instance" ],
+		 ],
 	"classvars" : [
 		 ],
 	"commentStamp" : "",
 	"instvars" : [
-		"changes",
-		"versionGroupsByName",
-		"changesByMethodByClass" ],
-	"name" : "History",
+		 ],
+	"name" : "HistoryTestTools",
 	"pools" : [
 		 ],
 	"super" : "Object",

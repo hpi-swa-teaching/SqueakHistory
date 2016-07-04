@@ -6,10 +6,8 @@
 		 ],
 	"commentStamp" : "",
 	"instvars" : [
-		"changes",
-		"versionGroupsByName",
-		"changesByMethodByClass" ],
-	"name" : "History",
+		 ],
+	"name" : "HistoryContributors",
 	"pools" : [
 		 ],
 	"super" : "Object",
