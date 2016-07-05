@@ -1,3 +1,3 @@
 accessing
 topContributors
-	^(self contributorsBagFrom: self changes) sortedCounts
+	^(HistoryContributors contributorsBagFrom: self changes) sortedCounts
