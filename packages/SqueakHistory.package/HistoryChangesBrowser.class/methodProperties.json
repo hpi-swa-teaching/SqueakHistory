@@ -1,8 +1,13 @@
 {
 	"class" : {
+		"authorDisplayText:" : "jk 7/9/2016 15:38",
+		"classDisplayText:" : "jk 7/9/2016 17:08",
+		"dateDisplayText:" : "jk 7/9/2016 16:59",
+		"displayText:" : "jk 7/9/2016 17:01",
+		"displayTextByType" : "jk 7/9/2016 17:06",
 		"showChangeList:" : "jj 6/15/2016 09:38",
-		"showChanges:" : "jk 7/4/2016 09:41",
-		"showChanges:usingFormat:" : "jk 7/4/2016 09:35",
+		"showChanges:" : "jk 7/9/2016 14:50",
+		"showChanges:usingFormat:" : "jk 7/9/2016 14:32",
 		"showChangesWithDefaultFormatting:" : "jk 6/29/2016 13:28" },
 	"instance" : {
 		 } }

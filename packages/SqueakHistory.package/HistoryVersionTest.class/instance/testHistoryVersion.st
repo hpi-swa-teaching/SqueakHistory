@@ -7,3 +7,4 @@ testHistoryVersion
 	self assert: 1 equals: version changesByName size.
 	self assert: #doIt equals: ((version changesByName at: 'Squeak1.23.changes') first type).
 	HistoryChangesBrowser showChanges: changes
+	
