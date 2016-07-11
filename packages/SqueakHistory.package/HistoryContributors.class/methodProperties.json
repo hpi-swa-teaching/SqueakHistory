@@ -6,6 +6,8 @@
 		"getInitialsFromStamp:" : "jk 7/9/2016 15:58",
 		"getNameFromInitials:" : "F .T. 6/26/2016 14:34",
 		"getNameFromStamp:" : "F .T. 6/26/2016 14:33",
+		"getTimeStampFromDateString:" : "jk 7/11/2016 12:12",
+		"getTimeStampFromStamp:" : "jk 7/11/2016 12:12",
 		"toTranscript:" : "F .T. 6/26/2016 15:34" },
 	"instance" : {
 		 } }

@@ -8,4 +8,4 @@ changesFor: method class: class meta: meta category: msgCategory selector: selec
 			category: msgCategory selector: selector].
 	changeList ifNil: [ self inform: 'No versions available'. ^nil ].
 
-	^changeList changeList
+	^changeList changeList sortBy: [:a :b | (HistoryContributors getTimeStampFromStamp: a stamp) > (HistoryContributors getTimeStampFromStamp: b stamp)]
