@@ -1,0 +1,14 @@
+{
+	"category" : "SqueakHistory",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		 ],
+	"name" : "HistoryRecentChangesParser",
+	"pools" : [
+		 ],
+	"super" : "Object",
+	"type" : "normal" }
