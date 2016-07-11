@@ -19,7 +19,10 @@ testGetInitialsFromStamp
 	initials := HistoryContributors getInitialsFromStamp: stamp.
 	self assert: 'Ipsum' equals: initials.
 
-stamp := '6/13/97 09:14 '.
+	stamp := '6/13/97 09:14 '.
 	initials := HistoryContributors getInitialsFromStamp: stamp.
 	self assert: '' equals: initials.
 	
+	stamp := 'jk 7/11/2016 11:17'.
+	initials := HistoryContributors getInitialsFromStamp: stamp.
+	self assert: 'jk' equals: initials.

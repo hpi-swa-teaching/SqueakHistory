@@ -8,7 +8,7 @@ getInitialsAndDateFromStamp: stamp
 											ifFalse: [cleanedStamp := stamp replaceAll: Character cr with: Character space.
 													(cleanedStamp subStrings: ' ') do: [:sub | 
 														sub := sub reject: [ :c | (Character space = c) or:  (Character tab = c)].
-														(sub matchesRegex: '(\d\d?/\d\d?/\d\d)') | (sub matchesRegex: '\d\d\:\d\d')
+														(sub matchesRegex: '(\d\d?/\d\d?/\d?\d?\d\d)') | (sub matchesRegex: '\d\d\:\d\d')
 															ifTrue: [
 																|dateSoFar|
 																dateSoFar :=(initialsAndDate second).
