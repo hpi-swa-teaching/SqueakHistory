@@ -1,5 +1,5 @@
 as yet unclassified
 authorDisplayText: changeRecord
 	| author |
-	author := (HistoryContributors getNameFromStamp: changeRecord stamp).
+	author := (HistoryStampParser getNameFromStamp: changeRecord stamp).
 	 ^ author ifEmpty: [''] ifNotEmpty: [' by ', author]

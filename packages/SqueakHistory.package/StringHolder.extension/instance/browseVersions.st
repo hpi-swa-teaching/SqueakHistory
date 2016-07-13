@@ -7,7 +7,8 @@ self classCommentIndicated ifTrue:
 
 class := self selectedClassOrMetaClass.
 ^(methodName := self selectedMessageName)
-	ifNil: [self inform: 'Sorry, only actual methods have retrievable versions.'. nil]
+	ifNil: [self inform: 'Sorry, only actual methods have retrievable versions.'.
+			nil]
 	ifNotNil: [	
 		HistoryChangesBrowser showChanges: 
 			(History isInstanceLoaded 

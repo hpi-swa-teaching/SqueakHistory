@@ -1,5 +1,5 @@
 as yet unclassified
-getInitialsAndDateFromStamp: stamp
+getInitialsAndDateStringFromStamp: stamp
 	| cleanedStamp initialsAndDate |
 	initialsAndDate := OrderedCollection newFrom: {'' . ''}.
 	stamp isNil ifTrue: [^initialsAndDate] 

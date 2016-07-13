@@ -7,7 +7,7 @@
 	"commentStamp" : "",
 	"instvars" : [
 		 ],
-	"name" : "HistoryContributors",
+	"name" : "HistoryStampParser",
 	"pools" : [
 		 ],
 	"super" : "Object",

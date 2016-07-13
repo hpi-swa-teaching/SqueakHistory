@@ -1,0 +1,11 @@
+{
+	"class" : {
+		"getDateStringFromStamp:" : "jk 7/13/2016 18:07",
+		"getInitialsAndDateStringFromStamp:" : "jk 7/13/2016 19:11",
+		"getInitialsFromStamp:" : "jk 7/13/2016 18:07",
+		"getNameFromInitials:" : "F .T. 6/26/2016 14:34",
+		"getNameFromStamp:" : "F .T. 6/26/2016 14:33",
+		"getTimeStampFromDateString:" : "jk 7/11/2016 12:12",
+		"getTimeStampFromStamp:" : "jk 7/13/2016 18:07" },
+	"instance" : {
+		 } }

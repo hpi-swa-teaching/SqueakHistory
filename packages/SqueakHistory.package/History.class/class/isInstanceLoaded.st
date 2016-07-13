@@ -1,3 +1,3 @@
 as yet unclassified
 isInstanceLoaded
-	^ instance notNil
+	^ instance isNil

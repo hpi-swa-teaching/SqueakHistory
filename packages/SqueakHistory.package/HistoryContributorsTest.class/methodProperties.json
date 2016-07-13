@@ -1,7 +1,0 @@
-{
-	"class" : {
-		 },
-	"instance" : {
-		"testGetDateFromStamp" : "jk 7/11/2016 12:13",
-		"testGetInitialsFromStamp" : "ft 7/12/2016 15:04",
-		"testGetTimeStampFromDate" : "jk 7/11/2016 11:58" } }
