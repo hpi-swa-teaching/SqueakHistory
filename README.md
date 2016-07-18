@@ -13,3 +13,11 @@ You can for example list all Top-Contributors.
 ##Customizations
 
 ##Documentation
+
+## Credits
+
+*  [Felix Thiel](https://github.com/iLoach)
+*  [Robert Beilich](https://github.com/RobertBeilich)
+*  [Julius Kunze](https://github.com/JuliusKunze)
+*  [Jonas Pohlmann](https://github.com/GittiHab)
+*  [Jonathan Janetzki](https://github.com/jjanetzki)
