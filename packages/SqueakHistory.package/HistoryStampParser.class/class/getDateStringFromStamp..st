@@ -1,4 +1,4 @@
-as yet unclassified
+parsing
 getDateStringFromStamp: stamp
 	^ (self getInitialsAndDateStringFromStamp: stamp) second
 	

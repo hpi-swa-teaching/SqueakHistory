@@ -1,4 +1,4 @@
-as yet unclassified
+testing
 testChangesForClassForMethod
 	| history changes |
 	history := HistoryTestTools history.

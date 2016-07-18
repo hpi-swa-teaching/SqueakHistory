@@ -1,0 +1,3 @@
+testing
+testWriteContributorsToTranscript
+	HistoryTestTools history writeContributorsToTranscript

@@ -1,3 +1,3 @@
-as yet unclassified
+access
 updateInstance
 	self instance: self newFromArchive

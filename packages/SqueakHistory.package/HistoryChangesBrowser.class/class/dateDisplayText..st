@@ -1,4 +1,4 @@
-as yet unclassified
+display text
 dateDisplayText: changeRecord
 	| date |
 	date := HistoryStampParser getDateStringFromStamp: changeRecord stamp.

@@ -1,0 +1,1 @@
+Extracts all changes of a method that are stored in the image.

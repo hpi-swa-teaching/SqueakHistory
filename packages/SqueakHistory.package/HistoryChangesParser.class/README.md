@@ -1,0 +1,1 @@
+Reads files of types changes, cs, st and sources into lists of ChangeRecords.

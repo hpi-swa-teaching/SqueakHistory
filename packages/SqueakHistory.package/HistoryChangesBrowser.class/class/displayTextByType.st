@@ -1,4 +1,4 @@
-as yet unclassified
+display text
 displayTextByType
 	^ IdentityDictionary newFrom: {
 		#doIt -> [:changeRecord | 'Comment'] . 

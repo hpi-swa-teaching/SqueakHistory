@@ -1,0 +1,1 @@
+Contains all changes in a group of history versions, e. g. 2.0 - 2.8

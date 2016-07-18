@@ -1,0 +1,1 @@
+Extracts date/time and contributor from "ChangeRecord stamp".

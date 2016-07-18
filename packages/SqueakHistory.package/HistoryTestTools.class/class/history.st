@@ -1,3 +1,3 @@
-as yet unclassified
+tools
 history
 	^ History newFromDirectory: (HistoryTestTools file: '1')

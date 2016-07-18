@@ -1,4 +1,4 @@
-as yet unclassified
+testing
 testParseSources
 	| changeList |
 	changeList := HistoryChangesParser parseChangesFrom: (HistoryTestTools file: 'SqueakV50Short.sources').

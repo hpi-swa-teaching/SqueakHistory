@@ -1,3 +1,3 @@
-as yet unclassified
+access
 clearInstance
 	self instance: nil

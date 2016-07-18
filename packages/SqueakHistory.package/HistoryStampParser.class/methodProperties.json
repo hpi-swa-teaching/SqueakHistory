@@ -1,11 +1,13 @@
 {
 	"class" : {
 		"getDateStringFromStamp:" : "jk 7/13/2016 18:07",
-		"getInitialsAndDateStringFromStamp:" : "jk 7/13/2016 19:11",
+		"getInitialsAndDateStringFromStamp:" : "jk 7/18/2016 10:46",
 		"getInitialsFromStamp:" : "jk 7/13/2016 18:07",
-		"getNameFromInitials:" : "F .T. 6/26/2016 14:34",
-		"getNameFromStamp:" : "F .T. 6/26/2016 14:33",
+		"getNameFromInitials:" : "jk 7/18/2016 10:32",
+		"getNameFromStamp:" : "jk 7/18/2016 11:38",
 		"getTimeStampFromDateString:" : "jk 7/11/2016 12:12",
-		"getTimeStampFromStamp:" : "jk 7/13/2016 18:07" },
+		"getTimeStampFromStamp:" : "jk 7/13/2016 18:07",
+		"isDatePart:" : "jk 7/18/2016 10:53",
+		"nameByInitials" : "jk 7/18/2016 10:49" },
 	"instance" : {
 		 } }

@@ -1,4 +1,4 @@
-accessing
+analyzing
 writeContributorsToTranscript
 	Transcript clear.
 	self contributorsBag sortedCounts keysAndValuesDo: [:aKey :aValue |

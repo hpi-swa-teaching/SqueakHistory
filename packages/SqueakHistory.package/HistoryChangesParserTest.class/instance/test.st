@@ -1,4 +1,4 @@
-as yet unclassified
+testing
 test
 	|types changes|
 	changes :=HistoryChangesParser parseChangesFrom: (HistoryTestTools file: 'source.st').

@@ -1,4 +1,4 @@
-as yet unclassified
+show changes
 showChanges: changes usingFormat: textFromChangeRecord
 	|changeList|
 	changeList := ChangeList new.

@@ -1,4 +1,4 @@
-as yet unclassified
+parsing
 changesForClass: aClass selector: aSelector
 	"Inspired by VersionsBrowser browseVersionsForClass:  selector:"
 	^ self

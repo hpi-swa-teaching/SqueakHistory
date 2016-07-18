@@ -1,4 +1,4 @@
-as yet unclassified
+parsing
 getTimeStampFromDateString: string
 	"Answer a TimeStamp that corresponds to my (text) stamp"
 	| tokens |

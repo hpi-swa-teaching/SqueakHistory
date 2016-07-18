@@ -2,6 +2,7 @@
 	"class" : {
 		 },
 	"instance" : {
-		"testGetDateFromStamp" : "jk 7/13/2016 17:26",
-		"testGetInitialsFromStamp" : "jk 7/13/2016 19:13",
-		"testGetTimeStampFromDate" : "jk 7/13/2016 18:26" } }
+		"testGetDateFromStamp" : "jk 7/18/2016 11:31",
+		"testGetInitialsFromStamp" : "jk 7/18/2016 10:50",
+		"testGetNameFromStamp" : "jk 7/18/2016 10:51",
+		"testGetTimeStampFromDate" : "jk 7/18/2016 10:26" } }

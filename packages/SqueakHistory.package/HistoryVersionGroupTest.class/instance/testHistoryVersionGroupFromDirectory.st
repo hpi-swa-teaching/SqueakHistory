@@ -1,4 +1,4 @@
-as yet unclassified
+testing
 testHistoryVersionGroupFromDirectory
 	| group |
 	group := HistoryVersionGroup newFromDirectory: (HistoryTestTools file: '1', FileDirectory slash, '1.16 - 1.3').

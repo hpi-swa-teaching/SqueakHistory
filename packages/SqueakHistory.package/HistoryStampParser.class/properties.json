@@ -1,10 +1,10 @@
 {
 	"category" : "SqueakHistory",
 	"classinstvars" : [
-		"instance" ],
+		 ],
 	"classvars" : [
 		 ],
-	"commentStamp" : "",
+	"commentStamp" : "jk 7/18/2016 09:35",
 	"instvars" : [
 		 ],
 	"name" : "HistoryStampParser",

@@ -1,15 +1,7 @@
-as yet unclassified
+instance creation
 newFromVersionGroupsByName: versionGroupsByName 
-	| changes changesByMethodByClass groupedByClass |
-	changes := versionGroupsByName values
-				gather: [:versionGroup | versionGroup versionsByName values
-						gather: [:version | version changesByName values
-								gather: [:changeRecord | changeRecord]]].
-	groupedByClass := changes
-				groupBy: [:changeRecord | changeRecord methodClass name asString].
-	changesByMethodByClass := Dictionary
-				newFrom: (groupedByClass associations
-						collect: [:each | each key -> (each value
-								groupBy: [:changeRecord | changeRecord methodSelector])]).
+	| changes changesByMethodByClass |
+	changes := self gatherChanges: versionGroupsByName.
+	changesByMethodByClass := self changesByMethodByClass: changes.
 	^ self new versionGroupsByName: versionGroupsByName;
 		 changesByMethodByClass: changesByMethodByClass; changes: changes

@@ -1,4 +1,4 @@
-as yet unclassified
+display text
 classDisplayText: changeRecord
 	| className |
 	className := changeRecord methodClass name.

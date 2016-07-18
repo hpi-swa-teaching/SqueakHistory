@@ -1,7 +1,5 @@
-as yet unclassified
+testing
 testGetDateFromStamp
-	"test for the initial extraction"
-
 	| timeStamp |
 	timeStamp := HistoryStampParser getTimeStampFromDateString: '6/9/97 11:46'.
 	self assert: '9 June 1997 11:46 am' equals: timeStamp asString.

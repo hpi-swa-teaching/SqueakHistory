@@ -1,4 +1,4 @@
-as yet unclassified
+instance creation
 newFromDirectory: directory 
 	| versionGroupsByName dir |
 	dir := FileDirectory default on: directory.

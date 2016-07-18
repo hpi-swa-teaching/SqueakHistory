@@ -1,0 +1,1 @@
+Displays a list of ChangeRecords to the user.

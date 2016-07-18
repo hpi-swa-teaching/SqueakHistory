@@ -1,10 +1,11 @@
-as yet unclassified
+testing
 testParseChanges
 	| changes|
 	changes := (HistoryChangesParser parseChangesFrom: (HistoryTestTools file: 'test.changes')).
 	HistoryChangesParser parseChangesFrom: (HistoryTestTools file: 'Squeak1.1.changes').
 	self assert: 7 equals: changes size.
-	self assert:  '''From Squeak5.1 of 26 April 2016 [latest update: #15852] on 9 May 2016 at 11:41:01 am''' equals: changes first string.
+	self assert:  '''From Squeak5.1 of 26 April 2016 [latest update: #15852] on 9 May 2016 at 11:41:01 am''' 
+		equals: changes first string.
 	self assert: #doIt equals: changes first type.
 	self assert: 'TestCase subclass: #MethodTest
 	instanceVariableNames: ''''
@@ -17,9 +18,7 @@ testParseChanges
 	self assert: #method equals: changes third type.
 	
 	self assert: 'rb 2/31/2016 10:15' equals: changes fourth stamp.
-	self assert: 1901 equals: changes fourth timeStamp year.  "Does not work: 
-	 (TimeStamp fromString: '1 January 1901 12:00 am') 
-	self should: [changeList fourth timeStamp] raise: Error whoseDescriptionIncludes: 'day is after month ends.' description: 'bla'."
+	self assert: 1901 equals: changes fourth timeStamp year.
 	self assert:  'failMethod1
 	"commentary with 3 !"' equals: changes fourth string.
 	

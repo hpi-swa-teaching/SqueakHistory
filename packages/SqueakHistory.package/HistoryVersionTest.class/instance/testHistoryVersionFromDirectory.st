@@ -1,4 +1,4 @@
-as yet unclassified
+testing
 testHistoryVersionFromDirectory
 	| version |
 	version := HistoryVersion newFromDirectory: (HistoryTestTools file: '1.23').
