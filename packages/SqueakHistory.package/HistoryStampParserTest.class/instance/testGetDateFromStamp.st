@@ -6,7 +6,6 @@ testGetDateFromStamp
 	timeStamp := HistoryStampParser getTimeStampFromDateString: '7/11/2016 11:17'.
 	self assert: '11 July 2016 11:17 am' equals: timeStamp asString.
 	
-
 	timeStamp := HistoryStampParser getTimeStampFromDateString: ''.
 	self assert: '1 January 1901 12:00 am' equals: timeStamp asString.
 	
@@ -14,4 +13,4 @@ testGetDateFromStamp
 	self assert: '1 January 1901 12:00 am' equals: timeStamp asString.
 	
 	timeStamp := HistoryStampParser getTimeStampFromDateString: '7/11/2016'.
-	self assert: '1 January 1901 12:00 am' equals: timeStamp asString.
+	self assert: '1 January 1901 12:00 am' equals: timeStamp asString

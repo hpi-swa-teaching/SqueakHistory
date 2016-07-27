@@ -1,3 +1,3 @@
 accessing
-changesByMethodByClass: anObject
-	changesByMethodByClass := anObject
+changesByMethodByClass: aDictionary
+	changesByMethodByClass := aDictionary

@@ -1,13 +1,15 @@
 {
 	"class" : {
 		"getDateStringFromStamp:" : "jk 7/13/2016 18:07",
-		"getInitialsAndDateStringFromStamp:" : "jk 7/18/2016 10:46",
+		"getInitialsAndDateStringFromStamp:" : "jj 7/27/2016 15:38",
 		"getInitialsFromStamp:" : "jk 7/13/2016 18:07",
 		"getNameFromInitials:" : "jk 7/18/2016 10:32",
 		"getNameFromStamp:" : "jk 7/18/2016 11:38",
-		"getTimeStampFromDateString:" : "jk 7/11/2016 12:12",
+		"getTimeStampFromDateString:" : "jj 7/27/2016 15:22",
 		"getTimeStampFromStamp:" : "jk 7/13/2016 18:07",
-		"isDatePart:" : "jk 7/18/2016 10:53",
-		"nameByInitials" : "jk 7/18/2016 10:49" },
+		"isDatePart:" : "jj 7/27/2016 16:34",
+		"nameByInitials" : "jk 7/18/2016 10:49",
+		"parse:from:" : "jj 7/27/2016 15:37",
+		"parseValidTimeStampFrom:" : "jj 7/27/2016 15:31" },
 	"instance" : {
 		 } }

@@ -1,12 +1,9 @@
 parsing
 getInitialsAndDateStringFromStamp: stamp 
-	| initials date |
-	initials := ''. 
-	date := ''.
+	| initialsAndDate substrings |
 	(stamp isNil or: [stamp isEmpty]) ifTrue: [^ {''. ''}].
-	(stamp subStrings: (' ', Character cr, Character tab))
-		do: [:sub |
-			(self isDatePart: sub)
-				ifTrue: [date := (date ifEmpty: [''] ifNotEmpty: [date , ' ']), sub]
-				ifFalse: [initials := sub]].
-	^ {initials . date}
+	
+	initialsAndDate := {'' . ''}.
+	substrings := (stamp subStrings: (' ', Character cr, Character tab)).
+	substrings do: [:sub | initialsAndDate := self parse: initialsAndDate from: sub].
+	^ initialsAndDate

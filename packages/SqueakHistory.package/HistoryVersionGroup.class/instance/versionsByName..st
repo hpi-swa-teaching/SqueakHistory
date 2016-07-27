@@ -1,3 +1,3 @@
 accessing
-versionsByName: anObject
-	versionsByName := anObject
+versionsByName: aDictionary
+	versionsByName := aDictionary

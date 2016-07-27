@@ -1,6 +1,6 @@
 testing
 testParseChanges
-	| changes|
+	| changes |
 	changes := (HistoryChangesParser parseChangesFrom: (HistoryTestTools file: 'test.changes')).
 	HistoryChangesParser parseChangesFrom: (HistoryTestTools file: 'Squeak1.1.changes').
 	self assert: 7 equals: changes size.
@@ -26,4 +26,4 @@ testParseChanges
 	self assert: (TimeStamp fromString: '23 June 2016 2:15 am') equals: changes fifth timeStamp.
 	
 	self assert: #classComment equals: changes sixth type.
-	self assert: 'blabla!' equals: changes sixth string.
+	self assert: 'blabla!' equals: changes sixth string

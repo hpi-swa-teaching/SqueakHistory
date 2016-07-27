@@ -11,4 +11,4 @@ testGetNameFromStamp
 	
 	stamp := 'mt 7/2/2010 08:04:20.9'.
 	name := HistoryStampParser getNameFromStamp: stamp.
-	self assert: 'mt' equals: name.
+	self assert: 'mt' equals: name

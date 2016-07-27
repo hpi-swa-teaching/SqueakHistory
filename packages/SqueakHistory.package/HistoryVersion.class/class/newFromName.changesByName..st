@@ -1,3 +1,4 @@
 instance creation
-newFromName: name changesByName: changesByName
-	^ self new name: name; changesByName: changesByName
+newFromName: name changesByName: changesByName 
+	^ self new versionName: name;
+		 changesByName: changesByName

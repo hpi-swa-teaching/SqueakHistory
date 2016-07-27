@@ -1,3 +1,3 @@
 accessing
-versionGroupsByName: anObject
-	versionGroupsByName := anObject
+versionGroupsByName: aDictionary
+	versionGroupsByName := aDictionary

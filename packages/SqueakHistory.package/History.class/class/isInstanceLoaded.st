@@ -1,3 +1,3 @@
 access
 isInstanceLoaded
-	^ instance isNil
+	^ instance isNil not
