@@ -55,7 +55,7 @@ HistoryChangesBrowser showChanges: <changes>
 ```
 
 ###Presentation
-More explanation (e. g. changes file format explanation) can be found in [our presentation](https://docs.google.com/presentation/d/1QWh2Hi8F1zkmSdmuBmypmDYzYWWFsMUxKecAOb7HFPo/edit?usp=sharing).
+More information (e. g. about the changes file format) can be found in [our presentation](https://docs.google.com/presentation/d/1QWh2Hi8F1zkmSdmuBmypmDYzYWWFsMUxKecAOb7HFPo/edit?usp=sharing). Explanations are in the comments below the slides.
 
 
 ## Credits
