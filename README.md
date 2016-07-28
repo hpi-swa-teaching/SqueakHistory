@@ -5,14 +5,22 @@
 Squeak History is a tool for Squeak programmers;
 It is a platform to parse and analyze all past versions of Squeak. 
 
-The "versions" button is replaced and shows if the history is loaded ALL past versions.
+The "versions" button is replaced and shows when the history is loaded ALL past versions.
 You can for example list all Top-Contributors.
+##Warning!!
+Once you loaded the project, the code of the versions button is overwritten
 
-## Installation
+## Installation and Initialization
+Just Drag and Drop the .sar file and click "install sar file"
+###Submodule
+###UpdateInstance
 
 ##Customizations
 
 ##Documentation
+###Usage
+###Clean-Up
+###Interface
 
 ## Credits
 
