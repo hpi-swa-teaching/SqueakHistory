@@ -1,3 +1,3 @@
 parsing
 getNameFromStamp: aStamp
-	^self getNameFromInitials: (self getInitialsFromStamp: aStamp)
+	^ self getNameFromInitials: (self getInitialsFromStamp: aStamp)

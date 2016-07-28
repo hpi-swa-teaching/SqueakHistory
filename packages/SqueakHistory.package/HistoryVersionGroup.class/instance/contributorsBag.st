@@ -1,4 +1,4 @@
 analyzing
 contributorsBag
 	^ (self changes
-		collect: [:change | self getNameFromStamp: change stamp]) asBag
+		collect: [:change | HistoryStampParser getNameFromStamp: change stamp]) asBag
