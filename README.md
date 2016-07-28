@@ -33,7 +33,7 @@ The versions button is replaced. Once you use the versions button, all versions 
 ```
 Tools > Browser > versions
 ```
-####Top-Contributors
+####Top-Contributers
 You can display the people with the most changes on the Transcript. With the full `History` loaded is can last about one hour.
 ```smalltalk
 History instance writeContributorsToTranscript
@@ -53,13 +53,9 @@ Changes can be shown manually in the changes browser via
 ```smalltalk
 HistoryChangesBrowser showChanges: <changes>
 ```
-
-###Presentation
-Our presentation can be found [here](https://docs.google.com/presentation/d/1QWh2Hi8F1zkmSdmuBmypmDYzYWWFsMUxKecAOb7HFPo/edit?usp=sharing).
-
 ## Credits
 *  [Felix Thiel](https://github.com/iLoach)
 *  [Robert Beilich](https://github.com/RobertBeilich)
 *  [Julius Kunze](https://github.com/JuliusKunze)
-*  [Jonas Pohlmann](https://github.com/GittiHab)
+*  [Jonas Pohlmann](https://github.com/PoJo93)
 *  [Jonathan Janetzki](https://github.com/jjanetzki)
