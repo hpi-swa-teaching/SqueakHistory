@@ -1,0 +1,90 @@
+'From Squeak5.0 of 20 July 2015 [latest update: #15110] on 20 July 2015 at 4:13:52 pm'!
+Error subclass: #CRCError
+	instanceVariableNames: ''
+	classVariableNames: ''
+	poolDictionaries: ''
+	category: 'Compression-Streams'!
+
+!CRCError methodsFor: 'as yet unclassified' stamp: 'nk 3/7/2004 15:56'!
+isResumable
+	^true! !
+BorderedMorph subclass: #BorderedSubpaneDividerMorph
+	instanceVariableNames: 'resizingEdge'
+	classVariableNames: ''
+	poolDictionaries: ''
+	category: 'Morphic-Windows'!
+
+!BorderedSubpaneDividerMorph methodsFor: 'as yet unclassified' stamp: 'ar 8/15/2001 23:24'!
+firstEnter: evt
+	"The first time this divider is activated, find its window and redirect further interaction there."
+	| window |
+
+	window := self firstOwnerSuchThat: [:m | m respondsTo: #secondaryPaneTransition:divider:].
+	window ifNil: [ self suspendEventHandler. ^ self ]. "not working out"
+	window secondaryPaneTransition: evt divider: self.
+	self on: #mouseEnter send: #secondaryPaneTransition:divider: to: window.
+! !
+
+!BorderedSubpaneDividerMorph methodsFor: 'as yet unclassified' stamp: 'ar 8/15/2001 23:24'!
+horizontal
+
+	self hResizing: #spaceFill.! !
+
+!BorderedSubpaneDividerMorph methodsFor: 'as yet unclassified' stamp: 'ar 8/15/2001 23:24'!
+resizingEdge
+
+	^resizingEdge
+! !
+
+!BorderedSubpaneDividerMorph methodsFor: 'as yet unclassified' stamp: 'ar 8/15/2001 23:24'!
+resizingEdge: edgeSymbol
+
+	(#(top bottom) includes: edgeSymbol) ifFalse:
+		[ self error: 'resizingEdge must be #top or #bottom' ].
+	resizingEdge := edgeSymbol.
+	self on: #mouseEnter send: #firstEnter: to: self.
+! !
+
+!BorderedSubpaneDividerMorph methodsFor: 'as yet unclassified' stamp: 'ar 8/15/2001 23:24'!
+vertical
+
+	self vResizing: #spaceFill.! !
+
+
+!BorderedSubpaneDividerMorph methodsFor: 'initialization' stamp: 'dgd 3/7/2003 14:09'!
+defaultBorderWidth
+"answer the default border width for the receiver"
+	^ 0! !
+
+!BorderedSubpaneDividerMorph methodsFor: 'initialization' stamp: 'dgd 3/7/2003 14:09'!
+defaultColor
+"answer the default color/fill style for the receiver"
+	^ Color black! !
+
+!BorderedSubpaneDividerMorph methodsFor: 'initialization' stamp: 'dgd 3/7/2003 14:09'!
+initialize
+	"initialize the state of the receiver"
+	super initialize.
+""
+	self extent: 1 @ 1! !
+
+"-- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- "!
+
+BorderedSubpaneDividerMorph class
+	instanceVariableNames: ''!
+
+!BorderedSubpaneDividerMorph class methodsFor: 'as yet unclassified' stamp: 'ar 8/15/2001 23:24'!
+forBottomEdge
+	^self new horizontal resizingEdge: #bottom! !
+
+!BorderedSubpaneDividerMorph class methodsFor: 'as yet unclassified' stamp: 'ar 8/15/2001 23:25'!
+forTopEdge
+	^self new horizontal resizingEdge: #top! !
+
+!BorderedSubpaneDividerMorph class methodsFor: 'as yet unclassified' stamp: 'ar 8/15/2001 23:25'!
+horizontal
+	^self new horizontal! !
+
+!BorderedSubpaneDividerMorph class methodsFor: 'as yet unclassified' stamp: 'ar 8/15/2001 23:25'!
+vertical
+	^self new vertical! !
