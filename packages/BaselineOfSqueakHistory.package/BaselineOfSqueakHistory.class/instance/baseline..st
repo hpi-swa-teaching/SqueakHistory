@@ -4,7 +4,11 @@ baseline: spec
     spec
         for: #common
         do: [ 
+		spec 
+			package: 'VB-Regex' with: [
+				spec repository: 'http://www.squeaksource.com/Regex']. 
+		spec
+			package: 'SqueakHistory';
+			requires: #('VB-Regex').
             spec
-                package: 'SqueakHistory'.
-            spec
-                group: 'default' with: #('SqueakHistory') ]
+			group: 'default' with: #('SqueakHistory')]
