@@ -15,13 +15,13 @@ You can for example list all Top-Contributors.
 ## Installation and Initialization
 Just Drag and Drop the .sar file and click "install sar file"
 ###Submodule
-Initialize and update Submodule
+Initialize and update Submodule:
 ``` shell
 git submodule init
 git submodule update
 ```
 ###UpdateInstance
-On workspace execute
+On workspace execute:
 ``` smalltalk
 History updateInstance.
 ```
@@ -34,7 +34,7 @@ The versions button is replaced. Once you use the versions button, all versions 
 Tools > Browser > versions
 ```
 ####Top-Contributers
-You can display the people with the most changes on the Transcript. With the full `History` loaded is can last about one hour.
+You can display the people with the most changes on the Transcript. With the full `History` loaded is can last about one hour:
 ```smalltalk
 History instance writeContributorsToTranscript
 ```
@@ -44,12 +44,12 @@ Execute on Workspace:
 History clearInstance
 ```
 ###Interface
-For example implementation consult the tests in the project.
-Changes can be accessed via the method
+For an example implementation consult the tests in the project.
+Changes can be accessed via the method:
 ```smalltalk
 History instance changesForClass: <className> forMethod:#<methodName>
 ```
-Changes can be shown manually in the changes browser via 
+Changes can be shown manually in the changes browser via:
 ```smalltalk
 HistoryChangesBrowser showChanges: <changes>
 ```
