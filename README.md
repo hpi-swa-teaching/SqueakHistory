@@ -5,8 +5,8 @@
 Squeak History is a tool for Squeak programmers;
 It is a platform to parse and analyze all past versions of Squeak. 
 
-The "versions" button is replaced and shows when the history is loaded ALL past versions.
-You can for example list all Top-Contributors.
+The "versions" button is replaced and shows all changes loaded from the Archive for the specified method.
+Furthermore it's possible to analyse the complete Archive.
 ##Warnings!!
 * Once you loaded the project, the code of the versions button is overwritten.
 * If a full archive is loaded the image can't be saved and opened again. Use
@@ -15,7 +15,7 @@ You can for example list all Top-Contributors.
 ## Installation and Initialization
 Just Drag and Drop the .sar file and click "install sar file"
 ###Submodule
-Initialize and update Submodule:
+After cloning the Project the Archive-Submodule has to be Initialized and updated:
 ``` shell
 git submodule init
 git submodule update
