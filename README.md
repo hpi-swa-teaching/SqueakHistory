@@ -53,6 +53,11 @@ Changes can be shown manually in the changes browser via:
 ```smalltalk
 HistoryChangesBrowser showChanges: <changes>
 ```
+
+###Presentation
+More explanation (e. g. changes file format explanation) can be found in [our presentation](https://docs.google.com/presentation/d/1QWh2Hi8F1zkmSdmuBmypmDYzYWWFsMUxKecAOb7HFPo/edit?usp=sharing).
+
+
 ## Credits
 *  [Felix Thiel](https://github.com/iLoach)
 *  [Robert Beilich](https://github.com/RobertBeilich)
