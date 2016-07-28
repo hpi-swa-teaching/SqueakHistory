@@ -28,10 +28,15 @@ History updateInstance.
 
 ##Documentation
 ###Usage
-  
+The versions button is replaced. Once you use the versions button, all versions from the loaded `History` are displayed.
+```
+Tools > Browser > versions
+```
+
 ###Clean-Up
+Execute on Workspace:
 ```smalltalk
-clearInstance
+History clearInstance
 ```
 ###Interface
 
