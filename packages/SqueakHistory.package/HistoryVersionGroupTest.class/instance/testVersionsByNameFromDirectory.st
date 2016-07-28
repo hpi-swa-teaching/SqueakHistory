@@ -1,5 +1,5 @@
 testing
-testHistoryVersionGroupFromDirectory
+testVersionsByNameFromDirectory
 	| group |
 	group := HistoryVersionGroup newFromDirectory: (HistoryTestTools file: '1', FileDirectory slash, '1.16 - 1.3').
 	self assert: 2 equals: group versionsByName size.

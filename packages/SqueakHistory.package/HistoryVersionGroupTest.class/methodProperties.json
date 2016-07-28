@@ -2,4 +2,5 @@
 	"class" : {
 		 },
 	"instance" : {
-		"testHistoryVersionGroupFromDirectory" : "jj 7/27/2016 16:41" } }
+		"testFromSmallFile" : "jj 7/28/2016 12:07",
+		"testVersionsByNameFromDirectory" : "jj 7/28/2016 12:07" } }
