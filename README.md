@@ -28,18 +28,31 @@ History updateInstance.
 
 ##Documentation
 ###Usage
+####Versions Button
 The versions button is replaced. Once you use the versions button, all versions from the loaded `History` are displayed.
 ```
 Tools > Browser > versions
 ```
-
+####Top-Contributers
+You can display the people with the most changes on the Transcript. With the full `History` loaded is can last about one hour.
+```smalltalk
+History instance writeContributorsToTranscript
+```
 ###Clean-Up
 Execute on Workspace:
 ```smalltalk
 History clearInstance
 ```
 ###Interface
-
+For example implementation consult the tests in the project.
+Changes can be accessed via the method
+```smalltalk
+History instance changesForClass: <className> forMethod:#<methodName>
+```
+Changes can be shown manually in the changes browser via 
+```smalltalk
+HistoryChangesBrowser showChanges: <changes>
+```
 ## Credits
 *  [Felix Thiel](https://github.com/iLoach)
 *  [Robert Beilich](https://github.com/RobertBeilich)
