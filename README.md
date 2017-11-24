@@ -1,4 +1,4 @@
-# Squeak History Project  [![Build Status](https://travis-ci.org/hpi-swa-teaching/SWT16-Project-01.svg?branch=master)](https://travis-ci.org/hpi-swa-teaching/SWT16-Project-01)[![Coverage Status](https://coveralls.io/repos/github/hpi-swa-teaching/SWT16-Project-01/badge.svg?branch=master)](https://coveralls.io/github/hpi-swa-teaching/SWT16-Project-01?branch=master)
+# Squeak History Project  [![Build Status](https://travis-ci.org/hpi-swa-teaching/SqueakHistory.svg?branch=master)](https://travis-ci.org/hpi-swa-teaching/SqueakHistory)[![Coverage Status](https://coveralls.io/repos/github/hpi-swa-teaching/SqueakHistory/badge.svg?branch=master)](https://coveralls.io/github/hpi-swa-teaching/SqueakHistory?branch=master)
 =========================
 
 
